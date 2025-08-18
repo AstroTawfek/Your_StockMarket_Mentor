@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Mentor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <h1 class="title">Stock Market Mentor</h1>
+        <div class="sections">
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <h2>Chat with Mentor</h2>
+                <select id="language">
+                    <option value="english">English</option>
+                    <option value="banglish">Banglish (Response in Bengali)</option>
+                </select>
+                <input type="text" id="message" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+                <p id="response"></p>
+            </div>
+
+            <!-- Analysis Section -->
+            <div class="analysis-section">
+                <h2>Stock Analysis</h2>
+                <input type="text" id="company_name" placeholder="Company Name">
+                <input type="number" id="pe_ratio" placeholder="PE Ratio (e.g., 39.42)">
+                <input type="number" id="revenue_growth" placeholder="Revenue Growth (%, e.g., 14.13)">
+                <input type="number" id="netinc_growth" placeholder="NetInc Growth (%, e.g., 12.13)">
+                <input type="number" id="gross_margin" placeholder="Gross Margin (%, e.g., 69.07)">
+                <input type="number" id="roic" placeholder="ROIC (%, e.g., 19.42)">
+                <input type="number" id="profit_margin" placeholder="Profit Margin (%, e.g., 35.79)">
+                <button onclick="analyze()">Analyze</button>
+                <div id="result">
+                    <p id="rating"></p>
+                    <p id="advice"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
