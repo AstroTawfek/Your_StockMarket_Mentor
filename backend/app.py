@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyB9YO8QxPUOjXbq8zgO52d3mp5Xh6u7SRA"
+GEMINI_API_KEY = "this is my secret API"
 genai.configure(api_key=GEMINI_API_KEY)
 
 app = FastAPI()
